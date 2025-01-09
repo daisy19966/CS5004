@@ -1,0 +1,10 @@
+Office Hour Preferences: Thursday afternoon
+Values: I hope to gain more knowledge in algorithms
+Inventory:
+	⁃	MacBook Air
+	⁃	Apple M3, 10 cores, 3.2 GHz
+	⁃	Mac15
+	⁃	macOS 14.6.1 
+	⁃	16 GB
+	⁃	247.56 GB available of 494.38 GB
+
