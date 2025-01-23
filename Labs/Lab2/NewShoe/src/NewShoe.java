@@ -1,19 +1,19 @@
 public class NewShoe {
 
-  private String type;
-  private String color;
-  private String brand;
+  private ShoeType type;
+  private ShoeColor color;
+  private ShoeBrand brand;
   private double size;
 
   /**
    * Constructs a Shoe object with the specified type, color, brand, and size.
    *
-   * @param type  the type of the shoe (e.g., "Sneaker")
-   * @param color the color of the shoe (e.g., "Red")
-   * @param brand the brand of the shoe (e.g., "Nike")
+   * @param type  the type of the shoe (e.g., "boot")
+   * @param color the color of the shoe (e.g., "black")
+   * @param brand the brand of the shoe (e.g., "Gucci")
    * @param size  the size of the shoe (e.g., 10.5)
    */
-  public Shoe(String type, String color, String brand, double size) {
+  public Shoe(ShoeType type, ShoeColor color, ShoeBrand brand, double size) {
     this.type = type;
     this.color = color;
     this.brand = brand;
