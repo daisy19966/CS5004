@@ -1,6 +1,3 @@
 public enum ShoeBrand {
-  Prada,
-  Gucci,
-  Chanel,
-  MiuMiu
+  NIKE, ADIDAS, PUMA, REEBOK;
 }
