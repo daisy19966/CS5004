@@ -8,12 +8,17 @@ public class NewShoe {
   /**
    * Constructs a Shoe object with the specified type, color, brand, and size.
    *
-   * @param type  the type of the shoe (e.g., "boot")
-   * @param color the color of the shoe (e.g., "black")
-   * @param brand the brand of the shoe (e.g., "Gucci")
+   * @param type  the type of the shoe (e.g., SNEAKER, DRESS, etc.)
+   * @param color the color of the shoe (e.g., BLACK, RED, etc.)
+   * @param brand the brand of the shoe (e.g., NIKE, ADIDAS, etc.)
    * @param size  the size of the shoe (e.g., 10.5)
+   * @throws IllegalArgumentException if the brand is NIKE and the type is DRESS
    */
-  public Shoe(ShoeType type, ShoeColor color, ShoeBrand brand, double size) {
+
+  public NewShoe(ShoeType type, ShoeColor color, ShoeBrand brand, double size) {
+    if (brand == ShoeBrand.NIKE && type == ShoeType.DRESS) {
+      throw new IllegalArgumentException("NIKE does not sell DRESS shoes.");
+    }
     this.type = type;
     this.color = color;
     this.brand = brand;
@@ -25,7 +30,7 @@ public class NewShoe {
    *
    * @return the type of the shoe
    */
-  public String getType() {
+  public ShoeType getType() {
     return type;
   }
 
@@ -34,7 +39,7 @@ public class NewShoe {
    *
    * @return the color of the shoe
    */
-  public String getColor() {
+  public ShoeColor getColor() {
     return color;
   }
 
@@ -43,7 +48,7 @@ public class NewShoe {
    *
    * @return the brand of the shoe
    */
-  public String getBrand() {
+  public ShoeBrand getBrand() {
     return brand;
   }
 
