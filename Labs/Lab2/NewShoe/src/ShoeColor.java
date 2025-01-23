@@ -1,6 +1,3 @@
 public enum ShoeColor {
-  red,
-  green,
-  blue,
-  black
+  BROWN, BLACK, WHITE, RED, PASTEL, NEUTRAL;
 }
