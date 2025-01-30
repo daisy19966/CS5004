@@ -66,7 +66,7 @@ public class NewShoe {
    *
    * @return a string summarizing the shoe's attributes
    */
-  public String getSummary() {
+  public String toString() {
     return "Shoe [Type: " + type + ", Color: " + color + ", Brand: " + brand + ", Size: " + size + "]";
   }
 }
